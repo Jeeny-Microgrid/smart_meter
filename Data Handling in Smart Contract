@@ -1,0 +1,28 @@
+ //Data Handling in Smart Contract
+Require: Sender.address, Data
+1: if Sender.address is the owner of the smart contract
+then
+2: if frequency(Sender) = 50Hz then
+3: // Data Processing
+4: Check voltage, current, power, and record times-
+tamp
+5: // Energy Offer Creation
+6: Prosumer creates an energy offer by specifying the
+energy amount and price per kWh
+7: // Data Storage
+8: Store Data in the smart contract with the pro-
+sumer’s account address and ID
+9: else
+10: // Frequency Error Handling
+11: Record Sender.address and handle frequency er-
+ror (e.g., log, revert transaction)
+12: end if
+13: else
+14: // Consumer Interaction
+15: Verify that the offer is active, sent payment is suffi-
+cient, and the consumer has not selected another offer
+16: Consumer selects an offer and provides the offer ID
+17: // Payment Processing
+18: Transfer payment to the producer’s account and store
+the offer ID
+19: end if
